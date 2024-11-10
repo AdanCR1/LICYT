@@ -1,0 +1,65 @@
+h5 {
+    font-size: 40px;
+    color: red;
+    text-shadow: 0px 8px 4px rgb(7, 79, 174);
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+.laptops {
+    position: static; /*hace que el menu-indice no se superponga*/
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;  /*baja abajo los elementos si es necesario*/
+    padding: 0;
+}
+
+.producto video {
+    background-color: black;
+    width: 300px;  /*mismo tamaño*/
+    height: 300px; /*mismo tamaño*/
+    border: 2px solid rgb(7, 79, 174);
+    pointer-events: none; /*no clicleable*/
+    margin: 10px;
+    border-radius: 30px;
+}
+.producto img {
+    background-color: black;
+    width: 100%;  /*mismo tamaño*/
+    height: 100%; /*mismo tamaño*/
+    border: 2px solid grey;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.bloque {
+    background: linear-gradient(90deg, black, rgb(74, 0, 0), black);
+    border: 1px solid rgb(7, 79, 174);
+    border-radius: 30px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-sizing: border-box;
+}
+.tabla {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: black;
+    pointer-events: none;
+}
+td {
+    text-align: left;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.nombre {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20px;
+}
+.nombre a:hover  {
+    color: red;
+}

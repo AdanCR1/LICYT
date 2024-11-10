@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    background: linear-gradient(180deg, black, white, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    color: mediumpurple;
+}
+
+h3 {
+    color: white;
+}
+
+.bloque-car {
+    border: 1px solid mediumpurple;
+}

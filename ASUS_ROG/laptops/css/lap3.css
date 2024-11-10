@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.inicio {
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    background: linear-gradient(180deg, mediumpurple, mediumpurple, fuchsia);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    color: mediumpurple;
+}
+
+.G16 {
+    min-width: 500px;
+}
+
+.G16 p {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+}

@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* INTRODUCCION */
+
+/*  INTRO  */
+
+h1,
+h2 {
+    background: linear-gradient(360deg, rgb(138, 41, 0), rgb(255, 86, 2), white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    color: red;
+}
+
+h4 {
+    color: rgb(255, 106, 0);
+}
+
+h5 {
+    color: rgb(255, 86, 2);
+}
+
+/*  PRESENTACION VIDEO*/
+
+.video-inicio video {
+    box-shadow: 0 -3px 6px rgb(0, 149, 255), 0 3px 6px rgb(0, 149, 255), -4px 0 6px rgb(255, 86, 2), 4px 0 6px rgb(255, 86, 2);
+    border: 1px solid white;
+}
+
+.bloque-inicio {
+    background-color: black;
+}
+
+.bloque-inicio:hover {
+    background: url(../img-vid/ROG6-fondo.jpg);
+    border-radius: 30px;
+}
+
+.bloque-inicio .rog7-foto {
+    width: 100%;
+    max-width: 20%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.video-inicio p {
+    color: rgb(0, 149, 255);
+}
+
+/*  CARACTERISTICAS  */
+
+.car {
+    background-color: #2c2c2c;
+}
+
+.bloque-car {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.img-fot2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.img-fot2 img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.img-fot2 video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imgs-esp2 {
+    display: inline-flex;
+    width: 100%;
+    max-width: 320px;
+    height: 600px;
+    padding: 20px;
+}
+
+.vid-esp2 {
+    display: grid;
+    justify-items: center;
+}
+
+.vid-esp2 .imgs-esp2 img {
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    border-radius: 20px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .4;
+    transition: .5s ease;
+}
+
+.vid-esp2 .imgs-esp2 img:hover {
+    width: 90%;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+.p-ren {
+    color: rgb(255, 166, 0);
+}
+
+.parrafos-vision p {
+    transform: rotate(-55deg);
+}
