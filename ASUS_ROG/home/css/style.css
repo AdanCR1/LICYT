@@ -1,0 +1,101 @@
+body {
+    background-color: rgba(0, 0, 0, 0.900);
+    color: white;
+    padding: 0; /*elimina espacios exteriores*/
+    margin: 0; /*elimina espacios inecesarios*/
+}
+
+.titulo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    align-items: center;
+}
+.logo-r {
+    height: 1em;
+    margin-right: 10px;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+header {
+    margin-top: 0;
+}
+.indice-inicio {
+    background-color: rgba(0, 0, 0, 0.600);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0; /*espacio de arriba del indice*/
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: red;
+}
+h4 {
+    text-align: center;
+}
+
+/*footer*/
+
+.footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-titulo h2 {
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0px 12px 8px rgb(8, 44, 164);
+}
+
+.footer-links,
+.footer-redes {
+    margin: 15px 0;
+}
+
+.footer-links a,
+.footer-redes a {
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+.footer-redes a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+
+.footer-parrafo {
+    margin-top: 15px;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.8s ease;
+    padding: 20px; /*para que no tape lo de arriba cuando flote*/
+    margin: 0;
+    justify-content: center;
+}
+.logo:hover {
+    transform: translateY(-30px);
+}

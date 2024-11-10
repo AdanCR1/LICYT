@@ -1,0 +1,91 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/*  INTRO  */
+
+h1,
+h2 {
+    background: linear-gradient(360deg, rgb(0, 149, 255), rgb(0, 149, 255), white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    font-size: 1.7em;
+    color: rgb(0, 149, 255);
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 white;
+}
+
+h4 {
+    color: rgb(0, 149, 255);
+}
+
+h5 {
+    text-shadow:
+        1px 1px 0 white,
+        -1px -1px 0 white;
+    color: black;
+}
+
+/*  PRESENTACION VIDEO*/
+
+.bloque-inicio {
+    transition: background 1s ease-in-out;
+}
+
+.bloque-inicio:hover {
+    background: black;
+    border-radius: 30px;
+}
+
+.bloque-inicio .rog7-foto {
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.video-inicio p {
+    color: rgb(0, 149, 255);
+}
+
+/*  CARACTERISTICAS  */
+
+.caracteristicas {
+    border: 2px solid black;
+    border-radius: 40px;
+    box-shadow: -8px 8px 22px black;
+    background-color: black;
+}
+
+.car {
+    background: url(../img-vid/phone5-fondo.jpg);
+}
+
+.vids-esp {
+    padding: 20px 0;
+}
+
+.vids-esp2 video {
+    border: 1px solid rgb(0, 96, 67);
+}
+
+.bloque-car {
+    background-color: #2c2c2c8c;
+    border: 1px solid black;
+}
+
+.p-ren {
+    text-shadow:
+        4px 4px 0 rgb(0, 149, 255),
+        -2px -2px 0 rgb(0, 149, 255);
+    color: white;
+}
+
+.parrafos-vision p {
+    transform: rotate(-55deg);
+}
