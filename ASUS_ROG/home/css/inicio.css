@@ -2,208 +2,114 @@ body {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-.inicio {
     background-color: black;
     color: white;
-    box-sizing: border-box;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    overflow: hidden;
 }
 
-/* indice */
-.indice {
+#vid-pre {
     position: fixed;
-    right: 0;
-    /* Pegado al borde derecho */
     top: 50%;
-    /* Colocado en el centro vertical */
-    transform: translateY(-50%);
-    /* Ajusta para centrar correctamente */
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    /* Lista en una columna */
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translate(-50%, -50%);
 }
 
-.indice li {
-    margin: 15px 0;
-    position: relative;
-    /* Posición relativa para manejar el hover */
+p {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.indice a {
-    position: relative;
-    display: block;
-    width: 20px;
-    /* Tamaño del círculo */
-    height: 20px;
-    background: red;
-    /* Color del punto */
-    border-radius: 50%;
-    /* Puntos redondos */
-    text-align: center;
-    line-height: 20px;
-    /* Centrado vertical */
-    text-decoration: none;
-    color: transparent;
-    /* Texto invisible inicialmente */
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Oculta el texto del indice al inicio */
-.indice .texto-hover {
-    position: absolute;
-    right: 30px;
-    white-space: nowrap;
-    /* Evita que el texto se divida en líneas */
-    color: white;
-    background: rgba(0, 0, 0, 0.8);
-    /* Fondo del texto */
-    padding: 5px 10px;
-    border-radius: 10px;
-    opacity: 0;
-    /* Texto invisible por defecto */
-    transition: opacity 0.3s;
-    pointer-events: none;
-    /* No afecta el mouse cuando está oculto */
-}
-
-/* Muestra el texto cuando se hace hover */
-.indice a:hover .texto-hover {
-    opacity: 1;
-    /* Hace el texto visible */
-}
-
-/*    video  */
-.prese {
-    pointer-events: none;
-    /*hace que el video no sea clicleable*/
-    box-shadow: 0px 10px 20px black;
+.indice {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgba(7, 7, 7, 0.338);
+    position: fixed;
     width: 100%;
     height: auto;
+    top: 0;
+    font-size: 0.9rem;
+    z-index: 10;
 }
 
-/*  REPLUBIC OF GAMERS   */
-.ROG {
-    text-align: center;
-    color: red;
-    font-size: 40px;
-    box-shadow: 0px 22px 22px black;
-    text-shadow: 0 6px 5px red;
+li {
+    display: inline-block;
     padding: 10px;
+    margin: 0;
 }
 
-/*  titulo y subtitulos de la presentacion  */
-.parrafos h2 {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
     color: red;
-    text-shadow: 0px 15px 6px black;
 }
 
-.parrafos p {
-    text-shadow: 0px 4px 2px black;
-    display: flex;
-    justify-content: left;
-}
+/*   FOOTER  */
 
-/*  EXPLORA NUESTROS PRODUCTOS   */
-h3 {
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0px 8px 4px red;
-    background-color: black;
+.footer {
     padding: 20px;
-    border-radius: 20px;
-    transition: transform 0.8s ease;
-}
-
-h3:hover {
-    transform: translateY(-10px);
-}
-
-h4 {
-    font-size: 30px;
-    text-shadow: 0px 12px 12px rgb(16, 92, 173);
-}
-
-.celus {
-    display: flex;
-    /* Bloque flexible */
-    justify-content: space-between;
-    /* Espacio entre imágenes */
-    flex-wrap: wrap;
-    /* Baja las imágenes si es necesario */
-    padding: 0;
-    list-style: none;
-    /* Elimina los marcadores de lista */
-}
-
-.celus li {
     text-align: center;
-    margin: 10px;
-    flex-basis: calc(25% - 20px);
-    /* Cada ítem ocupa un cuarto del ancho menos el espacio entre ellos */
-    box-sizing: border-box;
-    transition: transform 0.8s ease;
+    display: grid;
+    justify-items: center;
 }
 
-.celus li:hover {
-    transform: translateY(-10px);
+.footer-titulo h2 {
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0px 12px 8px black;
 }
 
-.celus img {
-    width: 100%;
-    /* Asegura que la imagen ocupe el ancho disponible del contenedor */
+.footer-links,
+.footer-redes {
+    margin: 15px 0;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.footer-links a,
+.footer-redes a {
+    display: inline-block;
+    border-radius: 20px;
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-redes a {
+    font-size: 2em;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+
+.footer-redes a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+
+.footer-parrafo {
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.logo-footer {
+    width: 100px;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0px 6px 12px red;
-}
-
-.celus p {
-    margin-top: 10px;
-    /* Espacio entre la imagen y el texto */
-    color: red;
-    font-size: 25px;
-}
-
-.celus p:hover {
-    color: white;
-}
-
-.cate {
-    background-color: black;
-    border-radius: 30px;
+    transition: transform 0.8s ease;
     padding: 20px;
+    margin: 0;
+    justify-content: center;
 }
 
-/*    galeria  */
-
-.galeria {
-    overflow-x: auto;
-    /* Permite el desplazamiento horizontal */
-    white-space: nowrap;
-    /* Evita que los elementos se envuelvan */
-    padding: 20px;
-    /* Espacio interno */
-}
-
-.galeria h4 {
-    color: white;
-}
-
-.deslizador {
-    display: inline-flex;
-    /* Permite que los elementos estén en línea */
-}
-
-.deslizador img {
-    width: 300px;
-    height: 500px;
-    margin-right: 10px;
-    /* Espacio entre las imágenes */
-    border-radius: 20px;
+.logo-footer:hover {
+    transform: translateY(-30px);
 }

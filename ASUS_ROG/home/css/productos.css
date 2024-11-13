@@ -1,65 +1,209 @@
-h5 {
-    font-size: 40px;
-    color: red;
-    text-shadow: 0px 8px 4px rgb(7, 79, 174);
-    text-align: center;
-}
 body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     background-color: black;
-}
-.laptops {
-    position: static; /*hace que el menu-indice no se superponga*/
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;  /*baja abajo los elementos si es necesario*/
-    padding: 0;
+    color: white;
 }
 
-.producto video {
-    background-color: black;
-    width: 300px;  /*mismo tamaño*/
-    height: 300px; /*mismo tamaño*/
-    border: 2px solid rgb(7, 79, 174);
-    pointer-events: none; /*no clicleable*/
-    margin: 10px;
-    border-radius: 30px;
-}
-.producto img {
-    background-color: black;
-    width: 100%;  /*mismo tamaño*/
-    height: 100%; /*mismo tamaño*/
-    border: 2px solid grey;
-    border-radius: 20px;
-    margin: 10px;
+p {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.bloque {
-    background: linear-gradient(90deg, black, rgb(74, 0, 0), black);
-    border: 1px solid rgb(7, 79, 174);
-    border-radius: 30px;
-    text-align: center;
-    flex-basis: calc(25% - 20px);
-    box-sizing: border-box;
-}
-.tabla {
+.indice {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgba(7, 7, 7, 0.338);
+    position: fixed;
     width: 100%;
     height: auto;
-    box-sizing: border-box;
+    top: 0;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+li {
+    display: inline-block;
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 30px;
-    background-color: black;
-    pointer-events: none;
+    margin: 0;
 }
-td {
-    text-align: left;
-    border: 1px solid red;
-    border-radius: 5px;
+
+a {
+    text-decoration: none;
+    color: white;
 }
-.nombre {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 20px;
-}
-.nombre a:hover  {
+
+a:hover {
     color: red;
+}
+
+/*  CONTENIDO  */
+
+h2 {
+    background: linear-gradient(180deg, rgb(175, 0, 0), red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.producto {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+.pro-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.pro-grid {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.pro-grid video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.pro-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    mask-image:
+        linear-gradient(to right, black 90%, transparent),
+        linear-gradient(to left, black 90%, transparent);
+    mask-composite: intersect;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th,
+td {
+    padding: 8px 20px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: white;
+    color: black;
+}
+
+tr:hover th,
+tr:hover td {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8b0000, #57007a);
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px red;
+}
+
+/*   FOOTER  */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.footer-titulo h2 {
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0px 12px 8px black;
+}
+
+.footer-links,
+.footer-redes {
+    margin: 15px 0;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.footer-links a,
+.footer-redes a {
+    display: inline-block;
+    border-radius: 20px;
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-redes a {
+    font-size: 2em;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+
+.footer-redes a:hover {
+    color: white;
+    text-shadow: 0px 8px 8px red;
+}
+
+.footer-parrafo {
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+    transition: transform 0.8s ease;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+.logo-footer:hover {
+    transform: translateY(-30px);
 }

@@ -1,8 +1,3 @@
-body {
-    background-color: black;
-    color: white;
-}
-
 h1 {
     background: linear-gradient(180deg, black, white, white);
     -webkit-background-clip: text;
@@ -14,7 +9,24 @@ h2 {
 }
 
 h3 {
-    color: white;
+    display: inline-block;
+    font-size: 2em;
+    background: linear-gradient(180deg, #21b1ff, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.bloque-grid {
+    overflow: hidden;
+}
+
+.img-pre {
+    transition: transform 2s ease;
+}
+
+.img-pre:hover {
+    transform: scale(1.2);
 }
 
 .bloque-car {
