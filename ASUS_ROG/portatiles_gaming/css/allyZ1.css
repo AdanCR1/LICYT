@@ -1,0 +1,153 @@
+h1 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+h2 {
+    background: linear-gradient(90deg, rgb(255, 0, 221), rgb(211, 0, 67));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    background: linear-gradient(90deg, rgb(31, 114, 246), rgb(0, 174, 255), rgb(31, 114, 246));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.p-car {
+    font-size: 1.3rem;
+    background: linear-gradient(90deg, rgb(0, 94, 255), darkviolet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.cont-fijo {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    z-index: 1;
+}
+
+.cont-fijo img {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cont-scroll {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    background-color: rgb(18, 18, 18);
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bloque-scroll {
+    margin: 100px 0;
+    display: grid;
+    justify-items: center;
+}
+
+.cont-scroll img {
+    max-width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+
+.img-scroll {
+    display: grid;
+    justify-items: center;
+}
+
+.img-scroll img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.p-gra {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+}
+
+.p-gra p {
+    font-size: 7rem;
+    z-index: 2;
+    background: linear-gradient(90deg, rgb(34, 152, 255), rgb(123, 0, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.time {
+    font-size: 2rem;
+    background: linear-gradient(90deg, rgb(0, 94, 255), darkviolet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.jugar {
+    position: relative;
+
+}
+
+.jugar img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: absolute;
+}
+
+.cont2 {
+    background: url(../img-vid/claridad.jpg);
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: 800px;
+    display: grid;
+    justify-items: center;
+}
+
+.bloque-grid {
+    background-color: rgba(0, 0, 0, 0.481);
+}
+
+/*  child  */
+
+.div-flex {
+    background-color: rgba(0, 0, 0, 0.396);
+    border-radius: 20px;
+}
+
+.car .bloque-flex:nth-of-type(1)  {
+    background-image: url(../img-vid/car3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.car:nth-of-type(2) .bloque-flex {
+    background-image: url(../img-vid/car1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.car:nth-of-type(3) .bloque-flex {
+    background-image: url(../img-vid/car2.jpg);
+    background-size: cover;
+    background-position: center;
+}

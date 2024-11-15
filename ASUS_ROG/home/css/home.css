@@ -142,7 +142,7 @@ a:hover {
 .titulos {
     display: grid;
     justify-items: center;
-    background: linear-gradient(90deg, red, black);
+    background: linear-gradient(90deg, rgb(140, 27, 27), red, rgb(140, 27, 27));
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -163,9 +163,12 @@ a:hover {
 .arte h2 {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: brown;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 
 .bloque-saga {

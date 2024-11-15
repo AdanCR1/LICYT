@@ -22,3 +22,12 @@ h2 {
     max-width: 300px;
     min-width: 300px;
 }
+
+.bloque-des {
+    min-width: 400px;
+    box-shadow: 2px 0 0 mediumpurple, -2px 0 0 mediumpurple, 0 2px 0 rgb(1, 128, 255), 0 2px 0 rgb(1, 128, 255);
+}
+
+.inicio .negrilla {
+    color: black;
+}
