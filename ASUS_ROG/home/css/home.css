@@ -55,10 +55,6 @@ body {
   padding: 0;
 }
 
-.indice img {
-  margin-right: 10px;
-}
-
 li {
   position: relative;
 }
@@ -83,7 +79,7 @@ ul .submenu {
   top: 100%;
   left: -50%;
   background-color: #111;
-  padding: 10px 0;
+  padding: 5px 0;
   list-style: none;
   display: none;
   min-width: 150px;
@@ -408,9 +404,9 @@ ul .submenu {
 }
 
 .div_icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons i {
@@ -472,4 +468,20 @@ ul .submenu {
 .derechos {
   font-size: 0.75rem;
   text-align: right;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .indice ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  ul .submenu {
+    min-width: 110px;
+  }
+  .indice {
+    font-size: 0.8rem;
+  }
 }
