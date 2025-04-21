@@ -11,31 +11,101 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
+
 .indice {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: rgba(7, 7, 7, 0.338);
+    background-color: rgba(7, 7, 7, 0.552);
     position: fixed;
     width: 100%;
-    height: auto;
     top: 0;
     font-size: 0.9rem;
     z-index: 10;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .indice ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
     margin: 0;
-}
-
-a {
+    padding: 0;
+  }
+  
+  .indice img {
+    margin-right: 10px;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  /* Enlaces generales */
+  a {
     text-decoration: none;
     color: white;
-}
-
-a:hover {
+    padding: 10px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .indice > ul > li > a:hover {
     color: red;
-}
+  }
+  
+  /* Submenús */
+  ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    background-color: #111;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+    min-width: 150px;
+    z-index: 20;
+  }
+  
+  .submenu li {
+    display: block;
+    text-align: center;
+  }
+  
+  /* Submenús visibles */
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
+  /* Efecto subrayado */
+  .submenu a {
+    position: relative;
+    color: white;
+    padding: 10px 10px;
+    transition: color 0.5s ease;
+  }
+  
+  .submenu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  .submenu a:hover {
+    color: red;
+  }
+  
+  .submenu a:hover::after {
+    width: 100%;
+  }
 
 /*  INICIO  */
 
@@ -202,6 +272,7 @@ h5 {
     width: 100%;
     max-width: 500px;
     height: auto;
+    color: #fff;
 }
 
 .texto-car {
@@ -306,66 +377,133 @@ h5 {
 
 /*  FOOTER  */
 
-.footer {
+.rog-footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
     padding: 20px;
-    text-align: center;
-    display: grid;
-    justify-items: center;
-}
-
-.footer-titulo h2 {
-    display: inline-block;
-    border-radius: 20px;
-    font-size: 24px;
-    margin: 0;
-    text-shadow: 0px 12px 8px black;
-}
-
-.footer-links,
-.footer-redes {
-    margin: 15px 0;
-    display: inline-block;
-    border-radius: 20px;
-}
-
-.footer-links a,
-.footer-redes a {
-    display: inline-block;
-    border-radius: 20px;
-    color: red;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-redes a{
-    font-size: 2em;
-}
-
-.footer-links a:hover {
-    color: white;
-    text-shadow: 0px 8px 8px red;
-}
-
-.footer-redes a:hover {
-    color: white;
-    text-shadow: 0px 8px 8px red;
-}
-
-.footer-parrafo {
-    margin-top: 15px;
-    display: inline-block;
-    border-radius: 20px;
-}
-
-.logo-footer {
-    width: 100px;
+    font-size: 0.8rem;
+  }
+  
+  .top-row {
+    margin-bottom: 10px;
+  }
+  
+  .ruta-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ruta-logo img {
+    width: 20px;
     height: auto;
-    transition: transform 0.8s ease;
-    padding: 20px;
-    margin: 0;
-    justify-content: center;
-}
-
-.logo-footer:hover {
-    transform: translateY(-30px);
-}
+  }
+  
+  .middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .enlaces-principales a,
+  .legales a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .enlaces-principales a::after,
+  .legales a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .enlaces-principales a:hover::after,
+  .legales a:hover::after {
+    width: 100%;
+  }
+  
+  .enlaces-principales a:hover,
+  .legales a:hover,
+  .social-icons i:hover {
+    color: red;
+  }
+  
+  .div_icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .social-icons i {
+    font-size: 1rem;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .newsletter {
+    text-align: right;
+  }
+  
+  .newsletter p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .newsletter input {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 200px;
+    margin-right: 5px;
+  }
+  
+  .newsletter button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    height: 2px;
+    background-color: gray;
+    margin: 20px 0;
+  }
+  
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .legales a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+  
+  .idioma {
+    font-size: 0.75rem;
+  }
+  
+  .derechos {
+    font-size: 0.75rem;
+    text-align: right;
+  }

@@ -11,32 +11,6 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.indice {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: rgba(7, 7, 7, 0.338);
-    position: fixed;
-    width: 100%;
-    height: auto;
-    top: 0;
-    font-size: 0.9rem;
-    z-index: 10;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: red;
-}
-
 /*  CONTENIDO  */
 
 h2 {
@@ -49,7 +23,6 @@ h2 {
 .producto {
     display: grid;
     justify-items: center;
-    gap: 30px;
     margin: 100px 0;
 }
 
@@ -59,23 +32,23 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     height: auto;
+    gap: 50px;
 }
 
 .pro-grid {
     display: grid;
     justify-items: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
 }
 
 .pro-grid video {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
-    margin: 0 20px;
 }
 
 .pro-grid img {
@@ -90,11 +63,11 @@ h2 {
 
 table {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: white;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     font-family: Arial, Helvetica, sans-serif;
@@ -102,7 +75,7 @@ table {
 
 th,
 td {
-    padding: 8px 20px;
+    padding: 3px 10px;
     border-bottom: 1px solid black;
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -128,8 +101,8 @@ tr:hover td {
 button {
     background: red;
     color: white;
-    padding: 6px 14px;
-    border-radius: 8px;
+    padding: 6px 0px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -138,72 +111,6 @@ button {
 
 button:hover {
     background: linear-gradient(135deg, #8b0000, #57007a);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 0 8px red;
-}
-
-/*   FOOTER  */
-
-.footer {
-    padding: 20px;
-    text-align: center;
-    display: grid;
-    justify-items: center;
-}
-
-.footer-titulo h2 {
-    display: inline-block;
-    border-radius: 20px;
-    font-size: 24px;
-    margin: 0;
-    text-shadow: 0px 12px 8px black;
-}
-
-.footer-links,
-.footer-redes {
-    margin: 15px 0;
-    display: inline-block;
-    border-radius: 20px;
-}
-
-.footer-links a,
-.footer-redes a {
-    display: inline-block;
-    border-radius: 20px;
-    color: red;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-redes a {
-    font-size: 2em;
-}
-
-.footer-links a:hover {
-    color: white;
-    text-shadow: 0px 8px 8px red;
-}
-
-.footer-redes a:hover {
-    color: white;
-    text-shadow: 0px 8px 8px red;
-}
-
-.footer-parrafo {
-    margin-top: 15px;
-    display: inline-block;
-    border-radius: 20px;
-}
-
-.logo-footer {
-    width: 100px;
-    height: auto;
-    transition: transform 0.8s ease;
-    padding: 20px;
-    margin: 0;
-    justify-content: center;
-}
-
-.logo-footer:hover {
-    transform: translateY(-30px);
 }
